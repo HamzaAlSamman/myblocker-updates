@@ -1,0 +1,27 @@
+! MyBlocker anti-detection list — phones refresh it every few hours.
+! Used only when "إخفاء مانع الإعلانات" is on (default).
+!
+!   @@||host^   bait: let it through (resolved by a non-filtering DNS) so the site's
+!               "is there an ad blocker?" check passes. Only hosts that do NOT serve
+!               the ads themselves belong here.
+!   ||host^     wall: block the anti-adblock message/service itself.
+!
+! The app also has these built in; this file adds to them.
+
+! --- bait ---
+@@||pagead2.googlesyndication.com^
+@@||adservice.google.com^
+@@||www.googletagservices.com^
+@@||partner.googleadservices.com^
+@@||imasdk.googleapis.com^
+
+! --- anti-adblock walls ---
+||fundingchoicesmessages.google.com^
+||btloader.com^
+||blockthrough.com^
+||pagefair.com^
+||pagefair.net^
+||getadmiral.com^
+||html-load.com^
+||content-loader.com^
+||blockadblock.com^
