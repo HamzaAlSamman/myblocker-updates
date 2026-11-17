@@ -25,3 +25,7 @@
 ||html-load.com^
 ||content-loader.com^
 ||blockadblock.com^
+
+! --- pop-up / redirect networks missed by the big lists (found in testing) ---
+||richpartners.co^
+||admaven.com^
